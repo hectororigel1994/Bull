@@ -377,9 +377,11 @@
 	.st0 {
 		stroke: $light-dark;
 		fill: #fff;
+		@include transition (all 0.4s ease 0s);
 	}
 	.st1 {
 		fill: $light-dark;
+		@include transition (all 0.4s ease 0s);
 	}
 	.content {
 		color: $light;
