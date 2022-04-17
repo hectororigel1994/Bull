@@ -22,6 +22,13 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/dark.css">
         <link id="color-changer" rel="stylesheet" href="css/colors/red.css">
+        <!-- animation -->
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css' rel='stylesheet'/>
+  
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css' rel='stylesheet'/> 
+
+<!--load WOW js from CDN-->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js'></script>
     </head>
 
     <body class="dark">
@@ -76,7 +83,8 @@
                                             <div></div>
                                             <div></div>
                                         </div>
-                                        <a href="welcome.html" class="hex-content">
+                                        <!--  <a href="welcome.html" class="hex-content"> -->
+                                        <a href="" class="hex-content wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.2s">
                                             <span class="hex-content-inner">
                                                 <span class="icon">
                                                     <i class="tf-dial"></i>
@@ -97,7 +105,8 @@
                                             <div></div>
                                             <div></div>
                                         </div>
-                                        <a href="about.html" class="hex-content">
+                                        <!-- <a href="about.html" class="hex-content"> -->
+                                        <a href="" class="hex-content wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.4s">
                                             <span class="hex-content-inner">
                                                 <span class="icon">
                                                     <i class="tf-profile-male"></i>
@@ -118,7 +127,8 @@
                                             <div></div>
                                             <div></div>
                                         </div>
-                                        <a href="services.html" class="hex-content">
+                                        <!-- <a href="services.html" class="hex-content"></a> -->
+                                        <a href="" class="hex-content wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.6s">
                                             <span class="hex-content-inner">
                                                 <span class="icon">
                                                     <i class="tf-tools-2"></i>
@@ -139,7 +149,8 @@
                                             <div></div>
                                             <div></div>
                                         </div>
-                                        <a href="resume.html" class="hex-content">
+                                       <!-- <a href="resume.html" class="hex-content"> -->
+                                        <a href="" class="hex-content wow bounceInUp" data-wow-duration="2s" data-wow-delay="0.8s">
                                             <span class="hex-content-inner">
                                                 <span class="icon">
                                                     <i class="tf-tools"></i>
@@ -160,7 +171,8 @@
                                             <div></div>
                                             <div></div>
                                         </div>
-                                        <a href="works.html" class="hex-content">
+                                        <!-- <a href="works.html" class="hex-content"> -->
+                                        <a href="" class="hex-content wow bounceInUp" data-wow-duration="2s" data-wow-delay="1.0s">
                                             <span class="hex-content-inner">
                                                 <span class="icon">
                                                     <i class="tf-briefcase2"></i>
@@ -181,7 +193,8 @@
                                             <div></div>
                                             <div></div>
                                         </div>
-                                        <a href="testimonials.html" class="hex-content">
+                                        <!-- <a href="testimonials.html" class="hex-content"> -->
+                                        <a href="" class="hex-content wow bounceInUp" data-wow-duration="2s" data-wow-delay="1.2s">
                                             <span class="hex-content-inner">
                                                 <span class="icon">
                                                     <i class="tf-chat"></i>
@@ -202,7 +215,8 @@
                                             <div></div>
                                             <div></div>
                                         </div>
-                                        <a href="contact.html" class="hex-content">
+                                        <!-- <a href="contact.html" class="hex-content"> -->
+                                        <a href="" class="hex-content wow bounceInUp" data-wow-duration="2s" data-wow-delay="1.4s">
                                             <span class="hex-content-inner">
                                                 <span class="icon">
                                                     <i class="tf-envelope2"></i>
@@ -222,6 +236,22 @@
                 </div> <!-- /.pt-tablecell -->
             </div> <!-- /.pt-table -->
         </main> <!-- /.site-wrapper -->
+
+        <script>
+          /*wow animations*/
+
+wow = new WOW(
+    {
+        boxClass:     'wow',      // default
+        animateClass: 'animated', // change this if you are not using animate.css
+        offset:       0,          // default
+        mobile:       true,       // keep it on mobile
+        live:         true        // track if element updates
+      }
+    )
+   wow.init();
+
+        </script>
         
         <!-- ================================
         JavaScript Libraries
