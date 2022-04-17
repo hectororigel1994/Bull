@@ -1455,7 +1455,7 @@ textarea, label {
     overflow-x: hidden;
   }
 
-  .image-responsive{
+  img{
     width: 100%;
     height: auto;
   }
