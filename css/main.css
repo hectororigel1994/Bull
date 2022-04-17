@@ -1455,6 +1455,11 @@ textarea, label {
     overflow-x: hidden;
   }
 
+  .image-responsive{
+    width: 100%;
+    height: auto;
+  }
+
   .pt-table {
     height: auto;
   }
