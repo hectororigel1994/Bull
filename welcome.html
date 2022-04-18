@@ -12,6 +12,7 @@
         <!-- fevicon -->
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
         
+        
         <!-- ================================
         CSS Files
         ================================= -->
@@ -22,6 +23,13 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/dark.css">
         <link id="color-changer" rel="stylesheet" href="css/colors/color-0.css">
+                <!-- animation -->
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css' rel='stylesheet'/>
+  
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css' rel='stylesheet'/> 
+
+<!--load WOW js from CDN-->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js'></script>
     </head>
 
     <body class="dark">
@@ -58,23 +66,23 @@
                     <a href="./" class="page-close"><i class="tf-ion-close"></i></a>
                     <!-- /.close -->
 
-                    <div class="author-image-large">
+                    <div class="author-image-large wow fadeInRight">
                         <img src="img/author.png" alt="">
                     </div>
                     
-                    <div class="container">
+                    <div class="container wow fadeInLeft">
                         <div class="row">
                             <div class="col-xs-12 col-md-6 col-lg-7">
                                 <div class="page-title">
                                     <h2>Don <span class="primary">Bull</span> <span class="title-bg">DonBull</span></h2>
                                     <p>Somos conocidos por ofrecer la más amplia variedad de cortes de carne frescos, al mejor precio.</p>
-                                    <p>Nos enfocamos en tus necesidades para ofrecerte el mejor serivicio. Nuestra calidad no tiene comparación.</p>
+                                    <p>Nos enfocamos en tus necesidades para ofrecerte el mejor serivicio. <br> Nuestra calidad no tiene comparación.</p>
                                 </div>
                             </div>
                         </div> <!-- /.row -->
                     </div> <!-- /.container -->
 
-                    <nav class="page-nav clear">
+                    <nav class="page-nav clear wow bounceInUp">
                         <div class="container">
                             <div class="flex flex-middle space-between">
                                 <span class="prev-page"><a href="index.html" class="link">&larr; Anterior</a></span>
@@ -90,6 +98,22 @@
             </div> <!-- /.pt-table -->
         </main> <!-- /.site-wrapper -->
         
+        <script>
+            /*wow animations*/
+  
+  wow = new WOW(
+      {
+          boxClass:     'wow',      // default
+          animateClass: 'animated', // change this if you are not using animate.css
+          offset:       0,          // default
+          mobile:       true,       // keep it on mobile
+          live:         true        // track if element updates
+        }
+      )
+     wow.init();
+  
+          </script>
+
         <!-- ================================
         JavaScript Libraries
         ================================= -->
