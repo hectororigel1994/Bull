@@ -166,4 +166,11 @@
       margin: 0 auto;
     }
   }
+
   
+  .pt-table {
+    display: table;
+    width: 100%;
+    height: auto !important;
+    /* height: calc(100vh - 4px); */
+}
