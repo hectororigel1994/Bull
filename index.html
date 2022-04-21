@@ -22,6 +22,8 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/dark.css">
         <link id="color-changer" rel="stylesheet" href="css/colors/red.css">
+        <link rel="stylesheet" href="css/whatsapp.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
         <!-- animation -->
     <link href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css' rel='stylesheet'/>
   
@@ -233,6 +235,35 @@
                         </div> <!-- /.row -->
                     </div> <!-- /.container -->
 
+                    <div class="container">
+                        <div class="row">
+                          <div class="col-md-4 col-md-offset-4">
+                            <div class="material-button-anim">
+                              <ul class="list-inline" id="options">
+                                <li class="option">
+                                  <button class="material-button option1" type="button" onclick="location.href='tel:+527717002266';">
+                                    <span class="fa fa-phone" aria-hidden="true"></span>
+                                  </button>
+                                </li>
+                                <li class="option">
+                                  <button class="material-button option2" type="button" onclick="location.href='mailto:';">
+                                    <span class="fa fa-envelope-o" aria-hidden="true"></span>
+                                  </button>
+                                </li>
+                                <li class="option">
+                                  <button class="material-button option3" type="button" onclick="location.href='https://api.whatsapp.com/send?phone=+527717002266&amp;text=Hola%21%20Quisiera%20hacer%20un%20pedido.';">
+                                    <span class="fa fa-whatsapp" aria-hidden="true"></span>
+                                  </button>
+                                </li>
+                              </ul>
+                              <button class="material-button material-button-toggle" type="button">
+                                <span class="fa fa-plus" aria-hidden="true"></span>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
                 </div> <!-- /.pt-tablecell -->
             </div> <!-- /.pt-table -->
         </main> <!-- /.site-wrapper -->
@@ -251,6 +282,15 @@ wow = new WOW(
     )
    wow.init();
 
+        </script>
+
+        <script>
+            $(document).ready(function () {
+    $('.material-button-toggle').on("click", function () {
+        $(this).toggleClass('open');
+        $('.option').toggleClass('scale-on');
+    });
+});
         </script>
         
         <!-- ================================
